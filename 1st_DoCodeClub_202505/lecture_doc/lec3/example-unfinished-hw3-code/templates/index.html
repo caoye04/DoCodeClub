@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO4：设置页面标题 -->
+    <!-- 提示：在title标签中写入"笃小实 - 您的AI助手" -->
+    <title>______</title>
+    <!-- TODO5：引入CSS文件 -->
+    <!-- 提示：使用url_for函数，路径为static/css/style.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='______') }}">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 笃小实</h1>
+            <p>您的个人AI助手</p>
+        </header>
+        
+        <div class="tabs">
+            <button id="tab-chat" class="tab-btn active">💬 聊天</button>
+            <button id="tab-tasks" class="tab-btn">📋 任务处理</button>
+        </div>
+        
+        <div id="chat-section" class="section active">
+            <div id="chat-container">
+                <div id="chat-messages">
+                    <div class="message assistant">
+                        <div class="message-content">
+                            你好！我是笃小实，有什么可以帮助您的吗? 🌟
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="chat-input-container">
+                    <textarea id="chat-input" placeholder="在此输入您的消息..." rows="3"></textarea>
+                    <div class="button-group">
+                        <button id="send-btn">发送</button>
+                        <button id="clear-chat-btn">清空聊天</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="tasks-section" class="section">
+            <div id="task-container">
+                <div id="new-task-container">
+                    <h3>创建新任务</h3>
+                    <textarea id="task-input" placeholder="在此描述您的任务..." rows="3"></textarea>
+                    <button id="create-task-btn">创建任务</button>
+                </div>
+                
+                <div id="task-list-container">
+                    <div class="task-header">
+                        <h3>任务列表</h3>
+                        <button id="refresh-tasks-btn">刷新</button>
+                    </div>
+                    <div id="task-list">
+                        <div class="no-tasks">暂无任务，请创建第一个任务</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 加载提示 -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>处理中...</p>
+        </div>
+    </div>
+    
+    <!-- TODO6：引入JavaScript文件 -->
+    <!-- 提示：使用url_for函数，路径为static/js/main.js -->
+    <script src="{{ url_for('static', filename='______') }}"></script>
+</body>
+</html>
