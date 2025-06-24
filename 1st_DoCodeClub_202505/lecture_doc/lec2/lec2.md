@@ -252,6 +252,7 @@ SECRET_KEY=随便写（建议写自己学号）
    - [LeetCode](https://leetcode.cn/)：算法练习
    - [Coursera](https://www.coursera.org/)：各类课程
    - [DataCamp](https://www.datacamp.com/)：数据科学课程
-
+5. **Prompt工程学习资料**
+   - [coursera上的prompt writing的课程](https://www.coursera.org/learn/chatgpt-prompt-engineering-for-developers-project/home/week/1)
 
 > # 祝各位在 DoCode 营中学习愉快，掌握实用技能！
