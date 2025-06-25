@@ -9,11 +9,7 @@ DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
 # 如果使用清华镜像，取消注释下一行
-<<<<<<< HEAD
 #DEEPSEEK_API_URL = "https://madmodel.cs.tsinghua.edu.cn/v1/chat/completions"
-=======
-DEEPSEEK_API_URL = "https://madmodel.cs.tsinghua.edu.cn/v1/chat/completions"
->>>>>>> 4ab59cfa9ae65fee9f94c4d8e1f7eaf9d4fbbf05
 
 # 应用配置
 DEBUG = True
