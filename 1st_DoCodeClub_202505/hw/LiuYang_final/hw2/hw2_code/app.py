@@ -1,6 +1,6 @@
 # app.py
 from flask import Flask, request, jsonify
-from agent import ToyAGI
+from core.agent import ToyAGI
 import os
 from dotenv import load_dotenv
 
