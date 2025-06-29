@@ -6,10 +6,10 @@ load_dotenv()
 
 # DeepSeek API配置
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
-DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
+# DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
 # 如果使用清华镜像，取消注释下一行
-# DEEPSEEK_API_URL = "https://madmodel.cs.tsinghua.edu.cn/v1/chat/completions"
+DEEPSEEK_API_URL = "https://madmodel.cs.tsinghua.edu.cn/v1/chat/completions"
 
 # 应用配置
 DEBUG = True

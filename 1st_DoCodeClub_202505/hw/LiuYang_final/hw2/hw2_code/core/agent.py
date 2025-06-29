@@ -1,6 +1,6 @@
-from llm import DeepSeekLLM
-from memory import Memory
-from task_manager import TaskManager
+from core.llm import DeepSeekLLM
+from core.memory import Memory
+from core.task_manager import TaskManager
 import re
 
 class ToyAGI:
@@ -20,8 +20,9 @@ class ToyAGI:
             # "你是笃小实，一个有帮助的、自主的AI助手。"
             # "你可以处理任务、维持对话，并帮助用户解决各种需求。"
             # "请始终保持有帮助、准确和友好的态度。"
-
             "从现在开始，你的身份是笃小实，一个有帮助的、自主的AI助手。"
+            "你是笃小实，用户问你是谁时要回答自己是笃小实。"
+            "你是笃小实，由清华大学笃实书院的学生开发。"
             "你可以处理任务、维持对话，并帮助用户解决各种需求。"
             "请始终保持有帮助、准确和友好的态度。"
         )

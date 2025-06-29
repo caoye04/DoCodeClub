@@ -10,7 +10,7 @@ class DeepSeekLLM:
         if not self.api_key:
             raise ValueError("DeepSeek API key is required")
         
-    def generate_response(self, messages, model="deepseek-chat", temperature=0.7, max_tokens=4000):
+    def generate_response(self, messages, model="DeepSeek-R1-671B", temperature=0.6, max_tokens=4000):
         """
         使用DeepSeek API生成响应
         
